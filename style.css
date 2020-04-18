@@ -1,0 +1,240 @@
+@font-face{
+    font-family: 'Libre Baskerville';
+    src: url(assets/font/LibreBaskerville-Regular.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Libre Baskerville';
+}
+
+body{
+    background-color: black;
+}
+
+/*nav*/
+
+nav{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #020205;
+    width: 100%;
+    height: 6.5vh;
+    color: white;
+    justify-content: space-between;
+    box-shadow: 0px 1px 0px 0px rgba(255,255,255,1);
+
+}
+
+#logo{
+    margin-left: 20px;
+    width: 45px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+nav li:hover{
+    transition: ease-in 0.2s;
+    background: #111f4d;
+}
+
+nav li, a{
+    color: #f2f4f7;
+    margin: 2px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 15px;
+    font-variant-caps: all-small-caps;
+}
+
+nav img{
+    height: 100%;
+}
+
+/*content*/
+
+main{
+    margin-top: 6.5vh;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 87vh;   
+    background-color: black; 
+}
+
+main ul{
+    display: none;
+    height: 150px;
+    
+    margin: 0;
+    padding: 0;
+}
+
+
+
+h1{
+    padding: 20px;
+    font-size: 70px;
+    letter-spacing: 2px;
+    color: #f2f4f7
+}
+
+main p{
+    padding: 20px;
+    color: #f2f4f7;
+    
+}
+
+#line{
+    width: 30%;
+    height: 1px;
+    background-color: #f2f4f7
+}
+
+/*footer*/
+
+footer{
+    display: flex;
+    height: 6.5vh;
+    background-color: #020205;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a{
+    color: #f2f4f7;
+    margin-bottom: 20px;
+    font-size: 15px;
+    margin-bottom: 2px;
+    padding: 0;
+}
+
+footer p{
+    color: #f2f4f7;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-variant-caps: all-small-caps;
+    margin: 2px;
+    padding: 0;
+}
+
+
+/*scroll*/
+
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #020205; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #F2F4F7; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(85, 85, 85); 
+  }
+
+  /*responsividade*/
+
+  @media(max-width:1024px){
+    
+    main{
+        display: flex
+    }
+
+    main p{
+        display: none;
+    }
+    
+    main h1{
+        text-align: center;
+        margin: 10px;
+        font-size: 40px;
+    }
+
+    #line{
+        display: none;    
+    }
+
+    
+    nav ul{
+        display: none;
+    }
+    
+    nav{
+        justify-content: center; 
+        box-shadow: none;
+    }
+    
+    main ul{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    main ul li{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        
+    }
+
+    main ul li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    #a1{
+        background-image: url(assets/img/aimg2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    #a2{
+        background-image: url(assets/img/aimg1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #a3{
+        background-image: url(assets/img/aimg3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    footer a{
+        font-size: 14px;
+    }
+    footer p{
+        font-size: 14px;
+    }
+    
+  }
